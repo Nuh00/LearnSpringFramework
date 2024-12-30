@@ -53,6 +53,12 @@ public class HelloWorldConfiguration {
     }
 
     @Bean
+    public Person person3Params(String name, int age, Adress adress){
+        return new Person(name, age, adress);
+
+    }
+
+    @Bean
     public Adress adress(){
         return new Adress("123 Main St", "New York");
     }
