@@ -23,3 +23,15 @@ public class App02HelloWorldSpring {
 
 
 }
+
+// Once you create the java classes and once you create the configuration class
+// IOC Container creates the runtime system
+// THat is the one creating the spring context and managing the beans
+// Spring container - manages spring beans and their lifecycle
+
+// 2 types of IOC Containers
+// 1. BeanFactory - Basic IOC Container
+// 2. ApplicationContext - Advanced IOC Container
+//    - Easy to use in web applications
+//    - Easy internationalization
+//    - Easy integration with Spring AOP
