@@ -2,6 +2,8 @@ package com.in28minutes.learnspringframework;
 
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
+import java.util.Arrays;
+
 public class App02HelloWorldSpring {
     public static void main(String[] args) {
         // 1. Launch the Spring Application
@@ -19,6 +21,8 @@ public class App02HelloWorldSpring {
         System.out.println(context.getBean((Adress.class)));
 
 
+        // How do I get the names of all the beans managed by Spring?
+        Arrays.stream(context.getBeanDefinitionNames()).forEach(System.out::println);
     }
 
 
